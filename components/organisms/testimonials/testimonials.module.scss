@@ -1,0 +1,54 @@
+@import "../../../styles/breakpoints";
+
+.container {
+  position: relative;
+}
+
+.testimonials {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include respond-to($gt-sm) {
+    flex-direction: row;
+  }
+}
+
+.quotes {
+  @include respond-to($gt-sm) {
+    margin-left: 100px;
+  }
+}
+
+.stripes {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+
+  @include respond-to($gt-sm) {
+    display: block;
+  }
+  z-index: -3;
+}
+
+.dots {
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  z-index: -3;
+  display: none;
+  @include respond-to($gt-sm) {
+    display: block;
+  }
+}
+
+.triangles {
+  position: absolute;
+  top: 15%;
+  @include respond-to($gt-sm) {
+    top: 0;
+  }
+  left: 15%;
+  z-index: -3;
+}

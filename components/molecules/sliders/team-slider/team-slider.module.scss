@@ -1,0 +1,9 @@
+.active {
+  opacity: 1;
+  transition: opacity .4s;
+}
+
+.notActive {
+  opacity: 0;
+  transition: opacity .4s;
+}

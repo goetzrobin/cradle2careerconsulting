@@ -1,0 +1,10 @@
+@import "../../../../styles/breakpoints";
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include respond-to($gt-sm){
+    flex-direction: row;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../../styles/breakpoints";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  width: 70px;
+  @include respond-to($gt-sm){
+    width: 100px;
+  }
+}
+
+

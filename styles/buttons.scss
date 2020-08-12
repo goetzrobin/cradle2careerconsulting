@@ -1,0 +1,20 @@
+@import "variables";
+
+.btn {
+  background-color: $primary;
+  color: $light;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    border: none;
+    background-color: darken($primary, 15);
+    outline: none;
+  }
+}

@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.stripes {
+  position: absolute;
+  left: 10%;
+  bottom: 33%;
+  z-index: -3;
+}
+
+.dots {
+  position: absolute;
+  right: 30%;
+  bottom: 0;
+  z-index: -3;
+
+}
+
+.triangles {
+  position: absolute;
+  top: 10%;
+  right: 16%;
+  z-index: -3;
+}

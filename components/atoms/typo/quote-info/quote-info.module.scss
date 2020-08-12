@@ -1,0 +1,26 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/breakpoints";
+
+.info {
+  margin-left: 30px;
+}
+
+.name {
+  line-height: 150%;
+  font-size: 1rem;
+  @include respond-to($gt-sm) {
+    font-size: 1.25rem;
+  }
+  color: $primary;
+  margin: 0;
+}
+
+.text {
+  line-height: 150%;
+  font-size: 1rem;
+  @include respond-to($gt-sm) {
+    font-size: 1.25rem;
+  }
+  color: $secondary;
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+@import "../../../styles/breakpoints";
+
+.container {
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  grid-auto-rows: 1fr;
+  grid-gap: -5px;
+  @include respond-to($gt-sm) {
+    grid-template-columns: 200px 200px 200px;
+  }
+}
+
+.item {
+  margin: -2px;
+}

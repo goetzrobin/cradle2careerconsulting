@@ -1,0 +1,23 @@
+@import "../../../styles/breakpoints";
+
+.container {
+  position: relative;
+  display: inline-block;
+  @include respond-to($gt-sm) {
+    padding: 100px;
+  }
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  @include respond-to($gt-sm) {
+    height: 50%;
+    width: 50%;
+  }
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
