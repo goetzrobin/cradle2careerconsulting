@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {PropsWithChildren, useState} from 'react';
 import {useKeenSlider} from 'keen-slider/react';
 import styles from './default-slider.module.scss';

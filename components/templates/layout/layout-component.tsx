@@ -8,6 +8,7 @@ const LayoutComponent =
          ref
         ) => {
             const maxWidthProps = !fullWidth && {maxWidth: 1500, margin: '0 auto'};
+            // @ts-ignore
             return <div ref={ref} style={{...style, ...maxWidthProps}} className={styles.component}>
                 {children}
             </div>

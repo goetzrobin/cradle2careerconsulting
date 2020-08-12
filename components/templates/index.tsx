@@ -3,7 +3,7 @@ import Hero from '~components/organisms/hero/hero';
 import Mission from '~components/organisms/mission/mission';
 import Services from '~components/organisms/services/services';
 import LayoutComponent from '~components/templates/layout/layout-component';
-import {td} from '../../pages/design/testdata';
+import {td} from '~models/testdata';
 import Layout from '~components/templates/layout/layout';
 import {CardProps} from '~components/atoms/lists/card/card';
 import Testiomnials, {TestimonialProps} from '~components/organisms/testimonials/testimonials';

@@ -4,7 +4,7 @@ import Hidable from './utils/hidable';
 import Mission from '~components/organisms/mission/mission';
 import Hero from '~components/organisms/hero/hero';
 import Services from '~components/organisms/services/services';
-import {td} from './testdata';
+import {td} from '~models/testdata';
 import Testiomnials from '~components/organisms/testimonials/testimonials';
 import CTA from '~components/organisms/cta/cta';
 

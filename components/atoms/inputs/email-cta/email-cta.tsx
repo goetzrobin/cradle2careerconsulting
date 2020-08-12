@@ -41,11 +41,11 @@ const EmailCTA = ({label = 'Your E-Mail', cta = 'Reach out today', color = Color
 
     return <div className={styles.container}>
         <CTATextField
-            variant="filled"
+            variant="outlined"
             label={label}
             color={(color as 'primary' | 'secondary')}/>
         <CSSButton
-            size="large" variant="contained" color={color as 'primary' | 'secondary'} disableElevation>
+            size="medium" variant="outlined" color={color as 'primary' | 'secondary'} disableElevation>
             {cta}
         </CSSButton>
 
