@@ -27,7 +27,7 @@ export default Home
 
 export const getStaticProps: GetStaticProps = async function getStaticProps() {
     // @ts-ignore
-    const content = await import(`../content/home.md`);
+    const content = await import(`../content/pages/home.md`);
     const configData = await import(`../siteconfig.json`);
     const data = matter(content.default);
 

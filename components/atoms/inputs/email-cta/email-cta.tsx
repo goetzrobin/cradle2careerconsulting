@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
     Button,
     OutlinedInputProps,
@@ -13,7 +14,7 @@ import {getButtonStyles, getFieldStyle, useStylesCTA} from '~components/atoms/in
 import {useEffect} from 'react';
 
 const createTextField = (color) => (props: TextFieldProps) => {
-    const classes = useStylesCTA(color)();
+    const classes = useStylesCTA(color);
     return (
         <TextField
             InputProps={{classes, disableUnderline: true} as Partial<OutlinedInputProps>}
@@ -41,11 +42,11 @@ const EmailCTA = ({label = 'Your E-Mail', cta = 'Reach out today', color = Color
 
     return <div className={styles.container}>
         <CTATextField
-            variant="outlined"
+            variant="filled"
             label={label}
             color={(color as 'primary' | 'secondary')}/>
         <CSSButton
-            size="medium" variant="outlined" color={color as 'primary' | 'secondary'} disableElevation>
+            size="large" variant="contained" color={color as 'primary' | 'secondary'} disableElevation>
             {cta}
         </CSSButton>
 
