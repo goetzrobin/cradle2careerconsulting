@@ -1,8 +1,9 @@
 @import "../../../styles/breakpoints";
 
 .component {
-  margin: 20px 20px 70px;
-  padding: 20px 0;
+  margin: 20px 20px 150px;
+  padding: 20px 10px;
+  box-sizing: border-box;
 
   @include respond-to($gt-sm) {
     margin: 50px 50px 150px;

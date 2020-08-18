@@ -5,14 +5,15 @@ import styles from './hero.module.scss';
 import {UnderlineContent} from '~models/UnderlineContent';
 
 export interface HeroProps {
+    above?: string;
     onButtonClick?: () => void;
     buttonText: string;
     headingContent: UnderlineContent[];
 }
 
-const Hero = ({onButtonClick = () => alert('Clicked'), buttonText, headingContent}: HeroProps) => {
+const Hero = ({above, onButtonClick = () => alert('Clicked'), buttonText, headingContent}: HeroProps) => {
     return <div className={styles.container}>
-        <HeroText onButtonClick={onButtonClick} className={styles.text} buttonText={buttonText}
+        <HeroText above={above} onButtonClick={onButtonClick} className={styles.text} buttonText={buttonText}
                   headingContent={headingContent}/>
         <div className={styles.graphic}>
             <CircleGraphic/>

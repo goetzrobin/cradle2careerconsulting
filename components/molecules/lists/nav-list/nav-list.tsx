@@ -33,8 +33,17 @@ const NavList = ({navItems = [], onItemClicked}: NavListProps) => {
             id="simple-menu"
             anchorEl={anchorEl}
             keepMounted
+            getContentAnchorEl={null}
+            anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+            }}
+            transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+            }}
             open={Boolean(anchorEl)}
-            onClose={handleClose}
+            onClose={() => setAnchorEl(null)}
         >
             {navItems.map(({href, linkText, underlineColor},
                            index) => <MenuItem key={index}

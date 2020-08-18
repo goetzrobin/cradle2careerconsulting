@@ -1,16 +1,20 @@
 @import "../../../styles/breakpoints";
+@import "../../../styles/variables";
 
 .container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
 }
 .logo {
-  width: 70px;
+  width: 60px;
   @include respond-to($gt-sm){
-    width: 100px;
+    width: 80px;
   }
 }
 

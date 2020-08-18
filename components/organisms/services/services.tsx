@@ -11,12 +11,13 @@ import {Colors} from '~models/colors';
 
 export interface ServicesProps {
     sectionContent: UnderlineContent[];
-    cardList: CardProps[]
+    cardList: CardProps[];
+    text?: string;
 }
 
-const Services = ({cardList, sectionContent}) => {
+const Services = ({cardList, text, sectionContent}) => {
     return <div className={styles.container}>
-        <TextSectionCenter sectionContent={sectionContent}/>
+        <TextSectionCenter text={text} sectionContent={sectionContent}/>
         <div className={styles.list}>
             <CardList cardList={cardList}/>
         </div>

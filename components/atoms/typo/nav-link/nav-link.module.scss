@@ -1,10 +1,17 @@
 @import "../../../../styles/variables";
+@import "../../../../styles/breakpoints";
 
 .navItem {
   position: relative;
-  margin: 0 20px;
-  padding: 20px;
+  margin: 0 20px 0 0;
+  padding: 20px 20px 20px 0;
+  width: 100%;
   cursor: pointer;
+  @include respond-to($gt-sm) {
+    margin: 0 20px;
+    padding: 20px;
+    width: fit-content;
+  }
 }
 
 .navLink {

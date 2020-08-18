@@ -8,11 +8,12 @@ import RectAngleStripes from '~components/atoms/geometry/other/RectangleStripes'
 import {Colors} from '~models/colors';
 import Dots from '~components/atoms/geometry/other/Dots';
 import Triangles from '~components/atoms/geometry/other/Triangles';
+import {TeamMemberProps} from '~components/atoms/lists/team-member/team-member';
 
 export interface TeamProps {
     sectionContent: UnderlineContent[];
     text: string;
-    team: any[]
+    team: TeamMemberProps[]
 }
 
 const Team = ({sectionContent, text, team}: TeamProps) => {

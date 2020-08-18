@@ -14,7 +14,7 @@ import {getButtonStyles, getFieldStyle, useStylesCTA} from '~components/atoms/in
 import {useEffect} from 'react';
 
 const createTextField = (color) => (props: TextFieldProps) => {
-    const classes = useStylesCTA(color);
+    const classes = useStylesCTA(color)();
     return (
         <TextField
             InputProps={{classes, disableUnderline: true} as Partial<OutlinedInputProps>}
