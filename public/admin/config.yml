@@ -5,7 +5,8 @@ media_folder: content/img
 public_folder: img
 collections:
   - label: "Educators"
-    name: "educators/educators"
+    name: "educators"
+    folder: "content/educators"
     create: true
     fields:
       - {label: "Name", name: "name", widget: "string"}
@@ -53,7 +54,48 @@ collections:
                       {label: Values,name: values,widget: list}
              ]
           }
-          - {label: "Our Services", name: services, widget: object,
+          - {label: "Services", name: services, widget: object,
+             fields: [{
+                        label: Heading,name: heading,widget: list,
+                        fields: [
+                        {label: Text,name: text,widget: text},
+                        {label: "Color",name: underlineColor,widget: "select",default: "primary" , options:  [{ label: "Blue", value: "primary" }, { label: "Pink", value: "secondary" }, { label: "Yellow", value: "accent" }]},
+                        {label: "New Line After this Text", name: lineBreak, widget: boolean, default: true}]
+                      },
+                      {label: Text, name: text, widget: text},
+             ]
+          }
+          - {label: "Testimonials", name: testimonials, widget: object,
+             fields: [{
+                        label: Heading,name: heading,widget: list,
+                        fields: [
+                        {label: Text,name: text,widget: text},
+                        {label: "Color",name: underlineColor,widget: "select",default: "primary" , options:  [{ label: "Blue", value: "primary" }, { label: "Pink", value: "secondary" }, { label: "Yellow", value: "accent" }]},
+                        {label: "New Line After this Text", name: lineBreak, widget: boolean, default: true}]
+                      },
+                      {
+                        label: Testimonials,name: testimonials,widget: list,
+                        fields: [
+                        {label: Text,name: text,widget: text},
+                        {label: Image,name: image,widget: image},
+                        {label: Name,name: name,widget: text},
+                        {label: info,name: info,widget: text},
+                        ]
+                      },
+             ]
+          }
+          - {label: "Team", name: team, widget: object,
+             fields: [{
+                        label: Heading,name: heading,widget: list,
+                        fields: [
+                        {label: Text,name: text,widget: text},
+                        {label: "Color",name: underlineColor,widget: "select",default: "primary" , options:  [{ label: "Blue", value: "primary" }, { label: "Pink", value: "secondary" }, { label: "Yellow", value: "accent" }]},
+                        {label: "New Line After this Text", name: lineBreak, widget: boolean, default: true}]
+                      },
+                      {label: Text, name: text, widget: text},
+             ]
+          }
+          - {label: "Call To Action", name: cta, widget: object,
              fields: [{
                         label: Heading,name: heading,widget: list,
                         fields: [
