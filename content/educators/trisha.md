@@ -1,5 +1,5 @@
 ---
-image: /images/friends.jpg
+image: images/friends.jpg
 text: adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua
 role: CEO & Educator
 color: accent

@@ -10,7 +10,7 @@ hero:
       underlineColor: secondary
       lineBreak: false
   buttonText: Reach Out from CMS
-  image1: /images/doctor.jpg
+  image1: images/doctor.jpg
   image2: images/img_5618.jpeg
 mission:
   heading:
@@ -39,11 +39,11 @@ testimonials:
       underlineColor: secondary
       lineBreak: false
   testimonials:
-    - image: /images/doctor.jpg
+    - image: images/doctor.jpg
       info: Who has had a good exp.
       name: A parent
       text: Bla bli blup und so
-    - image: /images/friends.jpg
+    - image: images/friends.jpg
       info: Who has had a good exp.
       name: A parent
       text: Bla bli blup und so

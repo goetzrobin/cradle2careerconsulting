@@ -11,7 +11,7 @@ export interface ImageProps {
 
 
 
-const Image = ({style,className, src = '/images/friends.jpg', alt=''}: ImageProps) => {
+const Image = ({style,className, src = 'images/friends.jpg', alt=''}: ImageProps) => {
     const [loaded, setLoaded] = useState(false);
     const imageRef = useRef();
     const handleLoadedImage = () => {
@@ -23,8 +23,8 @@ const Image = ({style,className, src = '/images/friends.jpg', alt=''}: ImageProp
     useEffect(() => {imageRef && imageRef.current && imageRef.current.complete && handleLoadedImage()});
     return (
         <div style={style} className={`${className} ${styles.imageContainer}`}>
-            <img style={loaded ? {opacity: 0, transition: 'opacity 300ms ease-in-out'} : {}} className={styles.blurImage} src={require(`../../../content${src}?lqip`)} alt={alt}/>
-            <img ref={imageRef} className={styles.image} src={require(`../../../content${src}?webp`)} alt={alt} onLoad={() => handleLoadedImage()}/>
+            <img style={loaded ? {opacity: 0, transition: 'opacity 300ms ease-in-out'} : {}} className={styles.blurImage} src={require(`../../../content/${src}?lqip`)} alt={alt}/>
+            <img ref={imageRef} className={styles.image} src={require(`../../../content/${src}?webp`)} alt={alt} onLoad={() => handleLoadedImage()}/>
         </div>
     );
 };
