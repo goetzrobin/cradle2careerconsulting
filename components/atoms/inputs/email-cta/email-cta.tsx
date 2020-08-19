@@ -62,22 +62,21 @@ const EmailCTA = ({label = 'Your E-Mail', cta = 'Reach out today', color = Color
         e.preventDefault();
     };
 
-    return <div className={styles.container}>
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-            <CTATextField
-                variant="filled"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                label={label}
-                color={(color as 'primary' | 'secondary')}/>
-            <CSSButton
-                onClick={handleSubmit}
-                size="large" variant="contained" color={color as 'primary' | 'secondary'} disableElevation>
-                {messageToDisplay}
-            </CSSButton>
-        </form>
-    </div>
+    return <form className={styles.container} name="contact" method="post" data-netlify="true"
+                 data-netlify-honeypot="bot-field">
+        <CTATextField
+            variant="filled"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            label={label}
+            color={(color as 'primary' | 'secondary')}/>
+        <CSSButton
+            onClick={handleSubmit}
+            size="large" variant="contained" color={color as 'primary' | 'secondary'} disableElevation>
+            {messageToDisplay}
+        </CSSButton>
+    </form>
 };
 
 export default EmailCTA
