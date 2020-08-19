@@ -1,10 +1,11 @@
 ---
-image: /images/doctor.jpg
-text: adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua
-role: CEO & Educator
+name: Simone Henry
+image: images/7ea97a53-422a-474b-92a3-74d73b8c23a3.jpeg
+role: CEO & Lead Educator
 color: accent
-name: Simone Simone
-contact: 
-    email: emaiemail.com
-    phone: 267744444
+text: adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+  magnaaliqua
+contact:
+  email: simonehenry@gse.harvard.edu
+  phone: "5163537886"
 ---
