@@ -21,6 +21,8 @@ export interface IndexTemplateProps {
     hero: {
         heading: UnderlineContent[];
         buttonText: string;
+        image1?: string;
+        image2?: string;
     }
     mission: {
         text: string;
@@ -91,7 +93,8 @@ const IndexTemplate = ({
     return <Layout navItems={navItems} onItemClicked={(ref) => executeScroll(ref, sectionRefs)}>
         <LayoutComponent ref={heroRef} style={{paddingLeft: 0, paddingRight: 0, marginRight: 0, marginLeft: 0}}
                          fullWidth={true}>
-            <Hero above={title} headingContent={hero.heading} buttonText={hero.buttonText}/>
+            <Hero above={title} onButtonClick={() => executeScroll('cta', sectionRefs)}
+                  headingContent={hero.heading} buttonText={hero.buttonText} image1={hero.image1} image2={hero.image2}/>
         </LayoutComponent>
         <LayoutComponent ref={missionRef}>
             <Mission listItems={mission.values} sectionContent={mission.heading}

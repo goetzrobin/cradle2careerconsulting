@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import Mail from '~components/atoms/icons/Mail';
 import Phone from '~components/atoms/icons/Phone';
 import {Colors} from '~models/colors';
+import Image from '~components/atoms/image/Image';
 
 export interface TeamMemberProps {
     name: string;
@@ -30,7 +31,7 @@ const TeamMember = ({color = Colors.primary, name, image, position, text, contac
         <div className={styles.blob}>
             <BlobFour color={color}/>
         </div>
-        <img className={styles.image} src={image} alt={`Image of ${name}`}/>
+        <Image className={styles.image} src={image} alt={`Image of ${name}`}/>
         <h2 className={styles.name}>{name}</h2>
         <h3 className={styles.position}>{position}</h3>
         <div className={styles.text}><ReactMarkdown source={text}/></div>

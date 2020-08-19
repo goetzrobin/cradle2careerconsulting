@@ -27,7 +27,6 @@ const Home = ({title, description, frontmatter, services, educators, ...props}) 
                 email: member.contact.email
             }
         }));
-
     return <IndexTemplate
         title={frontmatter.title}
         hero={frontmatter.hero}

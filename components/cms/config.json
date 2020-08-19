@@ -3,8 +3,8 @@
     "name": "git-gateway",
     "branch": "master"
   },
-  "media_folder": "content/img",
-  "public_folder": "img",
+  "media_folder": "content/images",
+  "public_folder": "images",
   "collections": [
     {
       "label": "Educators",
@@ -176,6 +176,16 @@
                   "label": "Button",
                   "name": "buttonText",
                   "widget": "text"
+                },
+                {
+                  "label": "Top Image",
+                  "name": "image1",
+                  "widget": "image"
+                },
+                {
+                  "label": "Bottom Image",
+                  "name": "image2",
+                  "widget": "image"
                 }
               ]
             },

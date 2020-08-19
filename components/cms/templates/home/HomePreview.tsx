@@ -19,6 +19,7 @@ const HomePreview = ({
             <h2>{title}</h2>
             <h1>{buildHeading(hero.heading)}</h1>
             <button>{hero.buttonText}</button>
+            <img src={hero.image1}/>
         </div>
 
         <div className="preview__section">

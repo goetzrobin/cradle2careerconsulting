@@ -10,6 +10,8 @@ hero:
           underlineColor: secondary
           lineBreak: false
     buttonText: Reach Out from CMS
+    image1:  /images/doctor.jpg
+    image2: /images/doctor.jpg
 mission:
     heading:
         - text: Mission &
@@ -35,11 +37,11 @@ testimonials:
           underlineColor: secondary
           lineBreak: false
     testimonials:
-        - image: https://fresnostate.edu/commencement/images/african_american.jpg
+        - image: /images/doctor.jpg
           info: Who has had a good exp.
           name: A parent
           text: Bla bli blup und so
-        - image: https://fresnostate.edu/commencement/images/african_american.jpg
+        - image: /images/friends.jpg
           info: Who has had a good exp.
           name: A parent
           text: Bla bli blup und so
