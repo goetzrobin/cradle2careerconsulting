@@ -15,8 +15,6 @@ const Image = ({style,className, src = 'images/friends.jpg', alt=''}: ImageProps
     const [loaded, setLoaded] = useState(false);
     const imageRef = useRef();
     const handleLoadedImage = () => {
-        console.log(imageRef);
-        console.log(imageRef.current)
         setLoaded(true);
     }
     // @ts-ignore
@@ -24,7 +22,7 @@ const Image = ({style,className, src = 'images/friends.jpg', alt=''}: ImageProps
     return (
         <div style={style} className={`${className} ${styles.imageContainer}`}>
             <img style={loaded ? {opacity: 0, transition: 'opacity 300ms ease-in-out'} : {}} className={styles.blurImage} src={require(`../../../content/${src}?lqip`)} alt={alt}/>
-            <img ref={imageRef} className={styles.image} src={require(`../../../content/${src}?webp`)} alt={alt} onLoad={() => handleLoadedImage()}/>
+            <img ref={imageRef} className={styles.image} src={require(`../../../content/${src}`)} alt={alt} onLoad={() => handleLoadedImage()}/>
         </div>
     );
 };

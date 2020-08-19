@@ -13,6 +13,8 @@
     "@material-ui/icons": "^4.9.1",
     "frontmatter-markdown-loader": "^3.6.0",
     "gray-matter": "^4.0.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
     "keen-slider": "^5.2.2",
     "lqip-loader": "^2.2.0",
     "netlify-cms-app": "^2.12.19",
