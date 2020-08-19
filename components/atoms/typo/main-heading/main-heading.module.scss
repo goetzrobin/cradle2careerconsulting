@@ -10,9 +10,10 @@ $top: -0.39em;
   @include respond-to($gt-sm) {
     font-size: 4rem;
   }
-  box-shadow:
-          inset 0 $bottom $light,
-          inset 0 $top $primary
+  background-image: linear-gradient(0, transparent 33%, $primary 33%, $primary 90%, transparent 90%);
+  background-position: 0 .95em;
+  background-repeat: repeat-x;
+  background-size: 2px 0.25em;
 }
 
 //.heading::after {
@@ -27,19 +28,15 @@ $top: -0.39em;
 //}
 
 .primary{
-  box-shadow:
-          inset 0 $bottom $light,
-          inset 0 $top $primary
+  background-image: linear-gradient(0, transparent 33%, $primary 33%, $primary 90%, transparent 90%);
+
 }
 
 .secondary {
-  box-shadow:
-          inset 0 $bottom $light,
-          inset 0 $top $secondary
+  background-image: linear-gradient(0, transparent 33%, $secondary 33%, $secondary 90%, transparent 90%);
+
 }
 
 .accent {
-  box-shadow:
-          inset 0 $bottom $light,
-          inset 0 $top $accent
+  background-image: linear-gradient(0, transparent 33%, $accent 33%, $accent 90%, transparent 90%);
 }

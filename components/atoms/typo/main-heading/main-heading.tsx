@@ -18,10 +18,10 @@ const MainHeading = ({
                      }: MainHeadingProps) => {
     return <h1 className={className}>
         {content.map((item, index) =>
-            <span key={index}>
-            <span className={`${styles.heading} ${styles[item.underlineColor]}`}>{item.text} </span>
+            <span className={styles.borderContainer} key={index}>
+                <span className={`${styles.heading} ${styles[item.underlineColor]}`}>{item.text} </span>
                 {item.lineBreak && <br/>}
-            </span>
+                </span>
         )}
     </h1>
 }
