@@ -13,8 +13,9 @@ $top: -0.39em;
     font-size: 3rem;
   }
   box-shadow:
-          inset 0 $bottom white,
-          inset 0 $top $primary
+          inset 0 $bottom 0 0 white,
+          inset 0 10px 0 0 white,
+          inset 0 $top 0 0 $primary
 }
 
 //.heading::after {
@@ -31,17 +32,20 @@ $top: -0.39em;
 .primary{
   box-shadow:
           inset 0 $bottom $light,
+          inset 0 10px 0 0 white,
           inset 0 $top $primary
 }
 
 .secondary {
   box-shadow:
           inset 0 $bottom $light,
+          inset 0 10px 0 0 white,
           inset 0 $top $secondary
 }
 
 .accent {
   box-shadow:
           inset 0 $bottom $light,
+          inset 0 10px 0 0 white,
           inset 0 $top $accent
 }
