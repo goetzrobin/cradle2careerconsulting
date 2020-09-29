@@ -1,5 +1,5 @@
 ---
-title: Cradle 2 Career Consulting
+title: Cradle to Career Consulting
 templateKey: index-page
 hero:
   heading:
