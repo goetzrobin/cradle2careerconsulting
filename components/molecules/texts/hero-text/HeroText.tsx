@@ -13,7 +13,7 @@ export interface HeroTextProps {
 }
 const HeroText = ({above, className, onButtonClick, headingContent, buttonText}: HeroTextProps) => {
     return <div className={className}>
-        {above && <h2 className={styles.top}>{above}</h2>}
+        {above && <h1 className={styles.top}>{above}</h1>}
         <MainHeading className={styles.main} content={headingContent}/>
         <Button size="large" variant="contained" onClick={onButtonClick}  color="primary" disableElevation>{buttonText}</Button>
     </div>

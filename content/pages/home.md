@@ -3,10 +3,10 @@ title: Cradle to Career Consulting
 templateKey: index-page
 hero:
   heading:
-    - underlineColor: primary
+    - underlineColor: accent
       lineBreak: true
       text: Helping Kids Rise,
-    - underlineColor: primary
+    - underlineColor: secondary
       lineBreak: true
       text: Ensuring Kids Thrive!
   buttonText: DAILY ENRICHMENT ADVENTURES!
@@ -28,6 +28,7 @@ mission:
     - COMMUNITY
     - POSSIBILITY
     - PERSEVERANCE
+  image: images/mission.jpg
 services:
   heading:
     - text: Our Services
@@ -71,9 +72,10 @@ cta:
   heading:
     - underlineColor: secondary
       lineBreak: true
-      text: |
-        
-        Your Child's Success and Happiness are our Highest Priority!
+      text: Your Child's Success and 
+    - underlineColor: accent
+      lineBreak: false
+      text:  Happiness are our Highest Priority!
   text: >
     
     Allow us to assist you in any way we can! We want to be your teammate, your assistant, your support system and your advocate in establishing and maintaining healthy development and sustainable success for the child you love!

@@ -28,6 +28,7 @@ export interface IndexTemplateProps {
         text: string;
         values: string[];
         heading: UnderlineContent[];
+        image: string;
     }
     services: {
         cards: CardProps[];
@@ -98,7 +99,7 @@ const IndexTemplate = ({
         </LayoutComponent>
         <LayoutComponent ref={missionRef}>
             <Mission listItems={mission.values} sectionContent={mission.heading}
-                     text={mission.text}/>
+                     text={mission.text} image={mission.image}/>
         </LayoutComponent>
         <LayoutComponent ref={serviceRef}>
             <Services sectionContent={services.heading} text={services.text} cardList={services.cards}/>

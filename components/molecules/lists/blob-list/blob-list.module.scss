@@ -1,3 +1,6 @@
+@import "../../../../styles/breakpoints";
+@import "../../../../styles/variables";
+
 .container {
   position: relative;
   max-width: 500px;
@@ -17,13 +20,17 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+  
 }
 
 .list {
   list-style: none;
   position: absolute;
   left: 5%;
-  top: 27%;
+  top: 14%;
+  @include respond-to($gt-sm) {
+    top: 27%;
+  }
 }
 
 .item {
@@ -31,6 +38,8 @@
   align-items: center;
   margin: 20px;
   font-weight: bold;
+  font-size: 1.3rem;
+  font-family: $secondary-font;
   &Text {
     margin-left: 10px;
   }

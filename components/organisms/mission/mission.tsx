@@ -15,15 +15,15 @@ export interface MissionProps {
     listItems: any[];
     sectionContent: UnderlineContent[];
     text: string;
+    image?: string;
 }
 
-const Mission = ({listItems, sectionContent, text}: MissionProps) => {
+const Mission = ({listItems, sectionContent, text, image}: MissionProps) => {
     return <div className={styles.container}>
         <TextSectionLeft sectionContent={sectionContent} text={text}/>
         <div className={styles.values}>
-            <ValuesList listItems={listItems}/>
+            <ValuesList image={image} listItems={listItems}/>
         </div>
-
         <div className={styles.stripes}>
             <OneCornerCircle rotationInDegrees={90} width="50px" height="50px" color={Colors.accent}/>
         </div>

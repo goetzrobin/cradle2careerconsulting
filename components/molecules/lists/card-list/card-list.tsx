@@ -7,7 +7,7 @@ export interface CardListProps {
 }
 const CardList = ({cardList = []}: CardListProps) => {
     return <div className={styles.container}>
-        {cardList.map((card, index) => <Card key={index} headline={card.headline} text={card.text} iconBackgroundColor={card.iconBackgroundColor}/>)}
+        {cardList.map((card, index) => <Card key={index} icon={card.icon} headline={card.headline} text={card.text} iconBackgroundColor={card.iconBackgroundColor}/>)}
     </div>
 };
 

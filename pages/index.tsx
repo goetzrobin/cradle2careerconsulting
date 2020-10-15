@@ -12,9 +12,9 @@ const Home = ({title, description, frontmatter, services, educators, ...props}) 
         .map(({frontmatter: service}) => ({
             headline: service.name,
             text: service.description,
-            iconBackgroundColor: Colors[service.color]
+            iconBackgroundColor: Colors[service.color],
+            icon: service.icon
         }));
-
     const teamMembers: TeamMemberProps[] = (educators || [])
         .map(({frontmatter: member}) => ({
             name: member.name,

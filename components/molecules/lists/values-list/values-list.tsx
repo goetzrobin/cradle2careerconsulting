@@ -6,11 +6,11 @@ import RectAngleStripes from '~components/atoms/geometry/other/RectangleStripes'
 import Dots from '~components/atoms/geometry/other/Dots';
 import {Colors} from '~models/colors';
 
-const ValuesList = ({listItems = []}: { listItems?: string[] }) => {
+const ValuesList = ({listItems = [], image}: { listItems?: string[], image?: string }) => {
     return <div className={styles.container}>
         <BlobList className={styles.values} listItems={listItems}/>
         <div className={styles.image}>
-            <BlobOne hasImage={true}/>
+            <BlobOne image={image} hasImage={true}/>
         </div>
         <div className={styles.stripes}>
             <RectAngleStripes color={Colors.secondary}/>
