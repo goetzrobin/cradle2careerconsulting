@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useRouter } from 'next/router'
+
 import Hero from '~components/organisms/hero/hero';
 import Mission from '~components/organisms/mission/mission';
 import Services from '~components/organisms/services/services';
@@ -91,10 +93,12 @@ const IndexTemplate = ({
         {href: 'cta', linkText: 'Start today', underlineColor: ColorNames.primary}
     ];
 
+    let router = useRouter()
+
     return <Layout navItems={navItems} onItemClicked={(ref) => executeScroll(ref, sectionRefs)}>
         <LayoutComponent ref={heroRef} style={{paddingLeft: 0, paddingRight: 0, marginRight: 0, marginLeft: 0}}
                          fullWidth={true}>
-            <Hero above={title} onButtonClick={() => executeScroll('cta', sectionRefs)}
+            <Hero above={title} onButtonClick={() => router.push('/activities')}
                   headingContent={hero.heading} buttonText={hero.buttonText} image1={hero.image1} image2={hero.image2}/>
         </LayoutComponent>
         <LayoutComponent ref={missionRef}>

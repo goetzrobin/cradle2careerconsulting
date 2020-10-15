@@ -8,7 +8,8 @@ const HomePagePreview = (props: { entry: any }) => {
     const frontmatter = props.entry.getIn(['data']).toJS();
     const cards: CardProps[] = [{
         headline: 'I am an example Service',
-        text: 'This will be replaced by your service entities'
+        text: 'This will be replaced by your service entities',
+        icon: 'baby'
     }];
     const teamMembers: TeamMemberProps[] = [{
         name: 'Place Holder Teammember',
