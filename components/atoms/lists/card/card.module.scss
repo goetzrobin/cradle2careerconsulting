@@ -3,9 +3,6 @@
 
 .container {
   margin: 30px 30px 30px;
-  @include respond-to($gt-sm){
-    margin: 30px 30px 100px;
-  }
   padding: 30px;
   display: flex;
   flex-direction: column;

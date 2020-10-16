@@ -13,7 +13,7 @@ export interface TeamMemberProps {
     image: string;
     position: string;
     text: string;
-    contact: {
+    contact?: {
         phone: number;
         email: string;
     }
@@ -26,7 +26,7 @@ const formatPhoneNumber = (number: number = 0) => {
     return `${firstThree}-${middleThree}-${lastFour}`
 };
 
-const TeamMember = ({color = Colors.primary, name, image, position, text, contact: {phone, email}}: TeamMemberProps) => {
+const TeamMember = ({color = Colors.primary, name, image, position, text, contact}: TeamMemberProps) => {
     return <div className={styles.container}>
         <div className={styles.blob}>
             <BlobFour color={color}/>
@@ -35,16 +35,16 @@ const TeamMember = ({color = Colors.primary, name, image, position, text, contac
         <h2 className={styles.name}>{name}</h2>
         <h3 className={styles.position}>{position}</h3>
         <div className={styles.text}><ReactMarkdown source={text}/></div>
-        <div className={styles.contact}>
+        {contact &&<div className={styles.contact}>
             <div className={styles.contactItem}>
                 <span className={styles.icon}><Mail/></span>
-                <a href={`mailto:${email}`}>{email}</a>
+                <a href={`mailto:${contact.email}`}>{contact.email}</a>
             </div>
             <div className={styles.contactItem}>
                 <span className={styles.icon}><Phone/></span>
-                <span>{formatPhoneNumber(phone)}</span>
+                <span>{formatPhoneNumber(contact.phone)}</span>
             </div>
-        </div>
+        </div>}
     </div>
 };
 export default TeamMember

@@ -12,7 +12,7 @@ import {TeamMemberProps} from '~components/atoms/lists/team-member/team-member';
 
 export interface TeamProps {
     sectionContent: UnderlineContent[];
-    text: string;
+    text?: string;
     team: TeamMemberProps[]
 }
 
