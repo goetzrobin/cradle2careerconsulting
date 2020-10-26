@@ -48,6 +48,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+  flex-wrap: wrap;
   @include respond-to($gt-sm) {
     flex-direction: row;
     padding: 30px;
@@ -63,9 +64,6 @@
 }
 
 .nav {
-  @include respond-to($gt-sm) {
-    width: 80%;
-  }
 }
 .cta {
   display: flex;

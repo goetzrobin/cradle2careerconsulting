@@ -57,7 +57,14 @@ const scrollToRef = (referenceArray, key) => {
         window.scrollTo({left: 0, top: referenceArray[key].current.offsetTop - 60, behavior: 'smooth'});
     }, 2);
 };
-const executeScroll = (href, refs) => scrollToRef(refs, href);
+const menuClicked = (href, refs, router) => {
+    console.log(href)
+    if (href === 'adventures') {
+        router.push('/adventures')
+    } else {
+        scrollToRef(refs, href);
+    }
+}
 
 const IndexTemplate = ({
                            title,
@@ -90,15 +97,16 @@ const IndexTemplate = ({
         {href: 'service', linkText: 'Services', underlineColor: ColorNames.accent},
         {href: 'test', linkText: 'Testimonials', underlineColor: ColorNames.secondary},
         {href: 'team', linkText: 'Team', underlineColor: ColorNames.accent},
-        {href: 'cta', linkText: 'Start today', underlineColor: ColorNames.primary}
+        {href: 'cta', linkText: 'Start today', underlineColor: ColorNames.primary},
+        {href: 'adventures', linkText: 'Our Adventures', underlineColor: ColorNames.accent}
     ];
 
     let router = useRouter()
 
-    return <Layout navItems={navItems} onItemClicked={(ref) => executeScroll(ref, sectionRefs)}>
+    return <Layout navItems={navItems} onItemClicked={(ref) => menuClicked(ref, sectionRefs, router)}>
         <LayoutComponent ref={heroRef} style={{paddingLeft: 0, paddingRight: 0, marginRight: 0, marginLeft: 0}}
                          fullWidth={true}>
-            <Hero above={title} onButtonClick={() => router.push('/activities')}
+            <Hero above={title} onButtonClick={() => router.push('/adventures')}
                   headingContent={hero.heading} buttonText={hero.buttonText} image1={hero.image1} image2={hero.image2}/>
         </LayoutComponent>
         <LayoutComponent ref={missionRef}>

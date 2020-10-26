@@ -22,7 +22,6 @@ const HomePagePreview = (props: { entry: any }) => {
             email: 'email email email',
         }
     }];
-    console.log(frontmatter);
 
     if (frontmatter) {
         return <HomePreview

@@ -13,7 +13,7 @@ const Footer = ({onItemClicked, navItems}) => {
         <div className={styles.logo}>
             <Logo/>
         </div>
-        <h1 className={styles.consulting}>Gradle To Carrer Consulting</h1>
+        <h1 className={styles.consulting}>Cradle To Carrer Consulting</h1>
         <div className={styles.row}>
             <div className={styles.nav}>
             <NavListFooter onItemClicked={onItemClicked} navItems={navItems}/>
@@ -25,7 +25,7 @@ const Footer = ({onItemClicked, navItems}) => {
         <div className={styles.row}>
             <SocialMediaList className={styles.social}/>
             <div className={styles.legal}>
-                &copy; {(new Date()).getFullYear()} &nbsp; Gradle To Career Consulting LLC.
+                &copy; {(new Date()).getFullYear()} &nbsp; Cradle To Career Consulting LLC.
             </div>
         </div>
     </div>

@@ -3,7 +3,6 @@ import EducatorsPreview from '~components/cms/templates/educator/EducatorPreview
 
 const EducatorsPagePreview = (props: { entry: any }) => {
     const frontmatter = props.entry.getIn(['data']).toJS();
-    console.log(frontmatter);
 
     if (frontmatter) {
         return <EducatorsPreview

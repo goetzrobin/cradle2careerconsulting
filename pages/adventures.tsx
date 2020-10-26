@@ -1,14 +1,14 @@
 import * as React from 'react';
 import {GetStaticProps} from 'next';
 import matter from 'gray-matter'
-import ActivitiesTemplate from '~components/templates/activities';
 import CollectionLoader from '../services/collection/collection-loader';
+import AdventuresTemplate from '~components/templates/adventures';
 
-const Activities = () => {
-    return <ActivitiesTemplate/>
+const Adventures = () => {
+    return <AdventuresTemplate/>
 };
 
-export default Activities
+export default Adventures
 
 export const getStaticProps: GetStaticProps = async function getStaticProps() {
     // @ts-ignore

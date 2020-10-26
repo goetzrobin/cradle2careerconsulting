@@ -9,8 +9,8 @@ export interface QuoteSliderProps {
 }
 
 const QuoteSlider = ({quotes, onSlideChanged = (newIndex: number) => { console.log(newIndex)} }: QuoteSliderProps) => {
-    const quoteComponents = quotes.map(({text, name, info}, index) => <Quote key={index} text={text} name={name}
-                                                                             info={info}/>);
+    const quoteComponents = quotes.map(({text, name, intro}, index) => <Quote key={index} text={text} name={name}
+                                                                             intro={intro}/>);
     return <div className={styles.container}>
         <DefaultSlider onSlideChanged={onSlideChanged}>
             {quoteComponents}

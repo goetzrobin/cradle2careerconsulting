@@ -36,9 +36,8 @@ const Layout = ({ navItems, title = '', description = '', onItemClicked, childre
             <Head>
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
                 <script src="https://kit.fontawesome.com/b319831eca.js" crossOrigin="anonymous"></script>
-                <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"/>
-                                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+                <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
             <Header navItems={navItems} onItemClicked={(href) => onItemClicked(href)} />
