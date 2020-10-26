@@ -50,9 +50,9 @@ const HomePreview = ({
                 <div className="preview__ts__card">
                     <div className="preview__ts__dot"/>
                     <div className="preview__ts__content">
-                        <p className="preview__ts__quote">{card.text}</p>
+                        <p className="preview__ts__quote">{card.intro}</p>
                         <div className="preview__ts__name">{card.name}</div>
-                        <div className="preview__ts__info">{card.info}</div>
+                        <div className="preview__ts__info">{card.text}</div>
                     </div>
                 </div>
             )}
