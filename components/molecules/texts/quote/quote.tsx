@@ -11,6 +11,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { DialogActions } from '@material-ui/core';
 import EmailCTA from '~components/atoms/inputs/email-cta/email-cta';
+import { Colors } from '~models/colors';
 
 const useStyles = makeStyles({
     avatar: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles({
     },
 });
 
-export interface SimpleDialogProps {
+interface SimpleDialogProps {
     open: boolean;
     content: string;
     name: string;
@@ -46,15 +47,17 @@ function SimpleDialog(props: SimpleDialogProps) {
                 </span></DialogTitle>
             <DialogContent>
                 <DialogContentText id="Testimonial Description">
-                    <div style={{ fontFamily: 'Quicksand' }}>
+                    <div style={{ color: `#${Colors.dark}`,fontFamily: 'Quicksand' }}>
                         <ReactMarkdown source={props.content} />
                     </div>
                 </DialogContentText>
             </DialogContent>
             <DialogActions>
-                    <h2>Convinced?</h2>
+                <div className={styles.quoteActions}>
+                <h2>Convinced?</h2>
                     <div style={{flexGrow: 2}}></div>
                     <EmailCTA />
+                </div>
             </DialogActions>
         </Dialog>
     );

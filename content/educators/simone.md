@@ -1,6 +1,6 @@
 ---
 name: Simone Henry
-image: images/7ea97a53-422a-474b-92a3-74d73b8c23a3.jpeg
+image: images/simone.jpg
 role: CEO & Lead Educator
 color: accent
 text:
