@@ -13,7 +13,8 @@ const Home = ({title, description, frontmatter, services, educators, ...props}) 
             headline: service.name,
             text: service.description,
             iconBackgroundColor: Colors[service.color],
-            icon: service.icon
+            icon: service.icon,
+            position: service.position
         }));
     const teamMembers: TeamMemberProps[] = (educators || [])
         .map(({frontmatter: member}) => ({

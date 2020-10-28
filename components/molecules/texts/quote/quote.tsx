@@ -43,7 +43,7 @@ function SimpleDialog(props: SimpleDialogProps) {
         <Dialog onClose={handleClose} aria-labelledby="Testimonial" open={open}>
             <DialogTitle id="Testimonial Title">
                 <span style={{ fontFamily: `Indie Flower`, fontWeight: 'bold', fontSize: '2rem' }}>
-                    {`${name}'s testimonial`}
+                    {`${name}'s Testimonial`}
                 </span></DialogTitle>
             <DialogContent>
                 <DialogContentText id="Testimonial Description">
@@ -54,7 +54,7 @@ function SimpleDialog(props: SimpleDialogProps) {
             </DialogContent>
             <DialogActions>
                 <div className={styles.quoteActions}>
-                <h2>Convinced?</h2>
+                <h2>Join our network!</h2>
                     <div style={{flexGrow: 2}}></div>
                     <EmailCTA />
                 </div>

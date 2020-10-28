@@ -5,6 +5,6 @@ role: CEO & Lead Educator
 color: accent
 text:
 contact:
-  email: simonehenry@gse.harvard.edu
+  email: cradle.career@gmail.com
   phone: "5163537886"
 ---

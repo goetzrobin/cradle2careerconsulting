@@ -43,7 +43,7 @@ const AdventuresTemplate = () => {
 
     const subheadingWeekly = [
         {
-            text: 'Weekly Adventures',
+            text: 'Weekly Adventures!',
             underlineColor: ColorNames.secondary,
             lineBreak: false
         },
@@ -62,7 +62,7 @@ const AdventuresTemplate = () => {
             name: 'Dannie Henry',
             image: 'images/dannie.jpg',
             position: 'Soccer Coach',
-            text: 'Dannie is a Columbia University athlete and former Columbia soccer player...',
+            text: 'Dannie Henry is a Columbia University graduate who has played soccer all her life, including on the Columbia women’s soccer team. Dannie teaches ball skills while also helping kids learn the technical game of soccer and the techniques athletes use to keep their bodies and minds at top performance!',
         },
         evan: {
             name: 'Evan Simone',
@@ -98,7 +98,7 @@ const AdventuresTemplate = () => {
             name: 'Renee',
             image: 'images/renee.jpg',
             position: 'Art Teacher',
-            text: 'A self-proclaimed hyper-creative, Renee is always on the hunt for creative outlets to keep her hands and imagination active and engaged. From painting and collaging, to flower pressing, to indoor gardening, she aims to instill curiosity by exploring a variety of media with her students.'
+            text: 'A self-proclaimed "hyper-creative", Renee Palmer is always on the hunt for creative outlets to keep her hands and imagination active and engaged. From painting and collaging, to flower pressing, to indoor gardening, she aims to instill curiosity by exploring a variety of media with her students.'
         },
         destanee: {
             name: 'Destanee Bonds',
@@ -156,7 +156,7 @@ const AdventuresTemplate = () => {
             icon: 'shield-alt',
             instructor: team['iman'],
             day: 'mon',
-            text: `Coach Iman is an Olympic level fencer and will teach her students the fundamental skills that she built upon in order to get to the very top of her game. Student will learn the footwork, arm and core strength, body control, discipline and healthy habits to become successful little fencers!`
+            text: `Coach Iman is an Olympic level fencer and will teach her students the fundamental skills that she built upon in order to get to the very top of her game. Students will learn the footwork, arm and core strength, body control, discipline and healthy habits to become successful little fencers!`
         },
         {
             iconBackgroundColor: Colors.accent,
@@ -177,7 +177,7 @@ const AdventuresTemplate = () => {
             icon: 'pencil-alt',
             instructor: team['destanee'],
             day: 'fri',
-            text: `Students will write to explore their worlds and express their realities with Coach Destanee. They will engage with a variety of types of writing including comics, poetry, songs and speeches, with space to follow their own passions and see where the pen and paper takes them.`
+            text: `Students will write to explore their worlds and express their realities with Coach Destanee. They will engage with a variety of types of writing including comics, poetry, songs and speeches, with space to follow their own passions and see where the pen and paper take them.`
         },
         {
             iconBackgroundColor: Colors.secondary,
@@ -304,7 +304,7 @@ const AdventuresTemplate = () => {
                         A virtual after-school program providing live, safe,
                         interactive enrichment and fun with other kids! Students will learn
                         new skills and explore from sea to sea via music, chess, martial arts, visual arts,
-                        culinary arts, creative writing, dance, drama and science with some yoga and SEL sprinkled on top.
+                        culinary arts, creative writing, dance, drama and science with some yoga, Spanish and SEL sprinkled on top.
                     </p>
                 </div>
 
@@ -372,7 +372,7 @@ const AdventuresTemplate = () => {
 
                 <div className='adventure-prices-item'>
                     <div>
-                        <h2 className='adventure-prices-item-headline'>Full Semester With A Buddy</h2>
+                        <h2 className='adventure-prices-item-headline'>Full Semester With A Referral</h2>
                         <div className='adventure-prices-item-price'>
                             <p>$10 <span>per day</span></p>
                             <p>$20 <span>per single class</span></p>
@@ -382,7 +382,7 @@ const AdventuresTemplate = () => {
                 </div>
             </div>
             <div style={{ marginTop: '50px' }}>
-                <h2>Ready to join our daily Adventures?</h2>
+                <h2>Ready to join our Daily Adventures?</h2>
                 <EmailCTA />
             </div>
         </LayoutComponent>

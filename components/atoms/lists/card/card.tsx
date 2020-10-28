@@ -8,6 +8,7 @@ export interface CardProps {
     headline: string;
     text: string;
     icon: string;
+    position?: number;
 }
 const Card = ({iconBackgroundColor = Colors.secondary, headline, text, icon}: CardProps) => {
     return <div className={styles.container}>

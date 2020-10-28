@@ -35,10 +35,7 @@ services:
       underlineColor: primary
       lineBreak: false
   text: >+
-    School Application Guidance, Tutoring, Test Prep, Childcare, Childcare
-    Coaching, Academic Success Planning and Advocacy, Extracurricular Planning,
-    Baby Proofing, Potty Training, Organizational Assistance, Daily Enrichment
-    Adventures and more!
+    Our services aim to make parenting and child development easier and less stressful by managing and/or orchestrating any and every time-consuming task you can think of, including but not limited to…
 
 testimonials:
   heading:
