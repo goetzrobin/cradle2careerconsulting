@@ -156,7 +156,7 @@ const AdventuresTemplate = () => {
             icon: 'shield-alt',
             instructor: team['iman'],
             day: 'mon',
-            text: `Coach Iman is an Olympic level fencer and will teach her students the fundamental skills that she built upon in order to get to the very top of her game. Students will learn the footwork, arm and core strength, body control, discipline and healthy habits to become successful little fencers!`
+            text: `Coach Iman is an world class fencer and will teach her students the fundamental skills that she built upon in order to get to the very top of her game. Students will learn the footwork, arm and core strength, body control, discipline and healthy habits to become successful little fencers!`
         },
         {
             iconBackgroundColor: Colors.accent,
@@ -375,7 +375,7 @@ const AdventuresTemplate = () => {
                         <h2 className='adventure-prices-item-headline'>Full Semester With A Referral</h2>
                         <div className='adventure-prices-item-price'>
                             <p>$10 <span>per day</span></p>
-                            <p>$20 <span>per single class</span></p>
+                            <p>$5 <span>per single class</span></p>
                         </div>
                     </div>
                     <p className='adventure-prices-item-price-total'>$300</p>
