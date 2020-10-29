@@ -64,7 +64,7 @@ const EmailCTA = ({label = 'Your E-Mail', cta = 'Reach out today', color = Color
 
     return <form className={styles.container} name="contact" method="post" data-netlify="true"
                  data-netlify-honeypot="bot-field">
-        <CTATextField
+        <TextField
             variant="filled"
             name="email"
             value={email}

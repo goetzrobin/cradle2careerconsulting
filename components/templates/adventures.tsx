@@ -95,7 +95,7 @@ const AdventuresTemplate = () => {
             text: 'Tabitha Johnson is an artist living in New York City. She has been playing the piano for 19 years. Her music classes include singing, songwriting, and playing instruments!'
         },
         renee: {
-            name: 'Renee',
+            name: 'Renee Palmer',
             image: 'images/renee.jpg',
             position: 'Art Teacher',
             text: 'A self-proclaimed "hyper-creative", Renee Palmer is always on the hunt for creative outlets to keep her hands and imagination active and engaged. From painting and collaging, to flower pressing, to indoor gardening, she aims to instill curiosity by exploring a variety of media with her students.'

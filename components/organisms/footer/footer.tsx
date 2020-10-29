@@ -13,7 +13,7 @@ const Footer = ({onItemClicked, navItems}) => {
         <div className={styles.logo}>
             <Logo/>
         </div>
-        <h1 className={styles.consulting}>Cradle To Carrer Consulting</h1>
+        <h1 className={styles.consulting}>Cradle To Career Consulting</h1>
         <div className={styles.row}>
             <div className={styles.nav}>
             <NavListFooter onItemClicked={onItemClicked} navItems={navItems}/>
