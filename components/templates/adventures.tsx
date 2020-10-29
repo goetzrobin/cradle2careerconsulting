@@ -350,7 +350,7 @@ const AdventuresTemplate = () => {
                     <div>
                         <h2 className='adventure-prices-item-headline'>One Week Drop Ins</h2>
                         <div className='adventure-prices-item-price'>
-                            <p>$30<span>per day</span></p>
+                            <p>$30 <span>per day</span></p>
                             <p>$15 <span>per single class</span></p>
                         </div>
 
@@ -381,6 +381,7 @@ const AdventuresTemplate = () => {
                     <p className='adventure-prices-item-price-total'>$300</p>
                 </div>
             </div>
+            <h4>All prices are per family!</h4>
             <div style={{ marginTop: '50px' }}>
                 <h2>Ready to join our Daily Adventures?</h2>
                 <EmailCTA />
