@@ -43,15 +43,15 @@ const AdventuresTemplate = () => {
 
     const subheadingWeekly = [
         {
-            text: 'Weekly Adventures!',
-            underlineColor: ColorNames.secondary,
+            text: '1:1 Enrichment Adventures!!',
+            underlineColor: ColorNames.accent,
             lineBreak: false
-        },
+        }
     ]
 
     const subheadingPlans = [
         {
-            text: 'Start your Adventure!',
+            text: 'Start your Adventure now!',
             underlineColor: ColorNames.accent,
             lineBreak: false
         }]
@@ -301,10 +301,10 @@ const AdventuresTemplate = () => {
                 <div>
                     <Monster />
                     <p style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '50px' }}>
-                        A virtual after-school program providing live, safe,
-                        interactive enrichment and fun with other kids! Students will learn
-                        new skills and explore from sea to sea via music, chess, martial arts, visual arts,
-                        culinary arts, creative writing, dance, drama and science with some yoga, Spanish and SEL sprinkled on top.
+                    Virtual private enrichment lessons are available, providing live, safe, 
+                    interactive enrichment and fun with experience, specialized teachers! 
+                    Students will learn new skills and explore from sea to sea via music, chess,
+                     martial arts, visual arts, culinary arts, creative writing, dance, drama, science and yoga!
                     </p>
                 </div>
 
@@ -312,20 +312,10 @@ const AdventuresTemplate = () => {
 
         </LayoutComponent>
         <LayoutComponent>
-            <TextSectionCenter sectionContent={subheadingDaily} />
-            <p>
-                30-minute daily introductions with youth development specialist Simone Henry of Harvard Graduate School of education. Intros will consist of yoga and meditation, social emotional learning, local and global exploration, remote community service projects, read-alouds and Spanish! Students will get grounded with breathing and meditative movement. They will discuss their thoughts, emotions and circumstances and strategies they can use to be the best they can be at home, in school and beyond! They will plan and practice small and large acts of kindness that can contribute to bettering their immediate and broader communities, and they will virtually explore the world from their home state to all 7 continents with a bit of Spanish in the mix!
-        </p>
-            <div className="adventures-daily">
-                <div className="adventures-daily-activities">
-                    {result['daily'].map((card, index) => <Adventure key={index} icon={card.icon} headline={card.headline} time={card.time} instructor={card.instructor} iconBackgroundColor={card.iconBackgroundColor} />)}
-                </div>
-            </div>
             <TextSectionCenter sectionContent={subheadingWeekly} />
             <div className="adventures-grid">
                 {days.map((day, index) => {
                     return <div key={index} className="adventures-day">
-                        <h2 style={{ fontSize: '1.75rem' }}>{day.text}</h2>
                         <div className="adventures-weekday-activities">
                             {result[day.short].map((card, index) => <Adventure key={index} day={day.text} icon={card.icon} headline={card.headline} time={card.time} text={card.text} instructor={card.instructor} iconBackgroundColor={card.iconBackgroundColor} />)}
                         </div>
@@ -335,55 +325,8 @@ const AdventuresTemplate = () => {
         </LayoutComponent>
         <LayoutComponent>
             <TextSectionCenter sectionContent={subheadingPlans} />
-            <div className='adventure-prices'>
-                <div className='adventure-prices-item'>
-                    <div>
-                        <h2 className='adventure-prices-item-headline'>Single Session Drop Ins</h2>
-                        <div className='adventure-prices-item-price'>
-                            <p>$50 <span>per day</span></p>
-                            <p>$30 <span>per single class</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='adventure-prices-item'>
-                    <div>
-                        <h2 className='adventure-prices-item-headline'>One Week Drop Ins</h2>
-                        <div className='adventure-prices-item-price'>
-                            <p>$30 <span>per day</span></p>
-                            <p>$15 <span>per single class</span></p>
-                        </div>
-
-                    </div>
-                    <p className='adventure-prices-item-price-total'>$150</p>
-                </div>
-
-                <div className='adventure-prices-item'>
-                    <div>
-                        <h2 className='adventure-prices-item-headline'>Full Semester</h2>
-                        <div className='adventure-prices-item-price'>
-                            <p>$15 <span>per day</span></p>
-                            <p>$7.5 <span>per single class</span></p>
-                        </div>
-                    </div>
-
-                    <p className='adventure-prices-item-price-total'>$450</p>
-                </div>
-
-                <div className='adventure-prices-item'>
-                    <div>
-                        <h2 className='adventure-prices-item-headline'>Full Semester With A Referral</h2>
-                        <div className='adventure-prices-item-price'>
-                            <p>$10 <span>per day</span></p>
-                            <p>$5 <span>per single class</span></p>
-                        </div>
-                    </div>
-                    <p className='adventure-prices-item-price-total'>$300</p>
-                </div>
-            </div>
-            <h4>All prices are per family!</h4>
             <div style={{ marginTop: '50px' }}>
-                <h2>Ready to join our Daily Adventures?</h2>
+                <h2>Email below for pricing and scheduling!</h2>
                 <EmailCTA />
             </div>
         </LayoutComponent>

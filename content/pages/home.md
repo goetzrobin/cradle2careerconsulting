@@ -9,7 +9,7 @@ hero:
     - underlineColor: secondary
       lineBreak: true
       text: Ensuring Kids Thrive!
-  buttonText: DAILY ENRICHMENT ADVENTURES!
+  buttonText: 1:1 Enrichment Adventures!!
   image1: images/0909bece-c211-4bf0-b45f-ba69b00c29cd_1_105_c.jpeg
   image2: images/img_5618.jpeg
 mission:
@@ -83,7 +83,8 @@ team:
   text: Hi! My name is Simone Henry and I am a lifelong child advocate and child
     development counselor. I started off as a preschool teacher's helper at the
     age of nine and have volunteered with children in every community I've been
-    a part of since. Nothing brings me bigger, brighter and more profound joy
+    a part of since. I volunteered with and babysat/ advocated for countless NYC kids throughout my time studying at Columbia University (thus getting to know the city and the school systems) and then returned to graduate school to learn how to truly serve as a child advocate via Harvard’s Graduate School of Education. 
+    Nothing brings me bigger, brighter and more profound joy
     than sitting down with a family or institution and strategizing with them on
     how to help their child or children be and stay as happy and as successful
     as possible. No matter the challenge, I will work tirelessly with you to

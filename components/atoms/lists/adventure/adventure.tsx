@@ -78,7 +78,6 @@ const Adventure = ({ iconBackgroundColor = Colors.secondary, headline, day, time
             <h2 className={styles.headline}>{headline}</h2>
         </div>
         <div>
-            {time && <p className={styles.text}>at <span style={{ fontSize: '1.4rem', color: `#${Colors.primary}` }}>{time}</span></p>}
             {instructor?.name && <p className={styles.text}>with <span style={{ fontSize: '1.25rem' }}>{instructor.name}</span></p>}
             {(instructor?.name || text) && <>
                 <Button onClick={handleClickOpen}>
